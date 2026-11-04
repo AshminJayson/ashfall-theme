@@ -1,11 +1,12 @@
-# Midnight Blue
+# Ashfall
 
-A cool, deep-navy theme. Soft cool-white text on a dark navy background (`#1A1F2B`),
-with a saturated palette that keeps blue and cyan distinct. Designed to be shared
+A neutral ash-grey dark theme. Soft off-white text on a near-neutral grey background
+(`#202125`), with warm coral keys and green values so YAML and config files scan easily.
+Designed to be shared
 between a terminal (Ghostty) and Neovim from a **single source of truth**.
 
-![bg #1A1F2B · fg #E6EAF2](https://img.shields.io/badge/bg-%231A1F2B-1A1F2B)
-![fg #E6EAF2](https://img.shields.io/badge/fg-%23E6EAF2-E6EAF2)
+![bg #202125 · fg #EAEBEE](https://img.shields.io/badge/bg-%23202125-202125)
+![fg #EAEBEE](https://img.shields.io/badge/fg-%23EAEBEE-EAEBEE)
 
 ## Ghostty
 
@@ -13,13 +14,13 @@ Copy the theme file into Ghostty's themes directory and reference it by name:
 
 ```sh
 mkdir -p ~/.config/ghostty/themes
-cp themes/midnight-blue ~/.config/ghostty/themes/midnight-blue
+cp themes/ashfall ~/.config/ghostty/themes/ashfall
 ```
 
 Then in `~/.config/ghostty/config`:
 
 ```
-theme = midnight-blue
+theme = ashfall
 ```
 
 Reload Ghostty (`Cmd+Shift+,`) or restart it.
@@ -36,21 +37,21 @@ truecolor, so Treesitter/LSP highlighting stays rich.
 `lazy.nvim`:
 
 ```lua
-{ 'AshminJayson/midnight-blue-theme', lazy = false, priority = 1000,
-  config = function() vim.cmd.colorscheme 'midnight-blue' end }
+{ 'AshminJayson/ashfall-theme', lazy = false, priority = 1000,
+  config = function() vim.cmd.colorscheme 'ashfall' end }
 ```
 
 `vim.pack` (Neovim 0.12+):
 
 ```lua
-vim.pack.add { 'https://github.com/AshminJayson/midnight-blue-theme' }
-vim.cmd.colorscheme 'midnight-blue'
+vim.pack.add { 'https://github.com/AshminJayson/ashfall-theme' }
+vim.cmd.colorscheme 'ashfall'
 ```
 
 For a transparent background (inherit the terminal's), set this before loading:
 
 ```lua
-vim.g.midnight_blue_transparent = true
+vim.g.ashfall_transparent = true
 ```
 
 ### B. Palette sync, no plugin
@@ -62,30 +63,30 @@ render straight from Ghostty instead of loading a colorscheme:
 vim.opt.termguicolors = false
 ```
 
-Neovim then inherits Midnight Blue's colors directly from Ghostty — one source of truth.
+Neovim then inherits Ashfall's colors directly from Ghostty — one source of truth.
 Tradeoff: 16-color syntax instead of truecolor (Treesitter detail flattens).
 
 ## VS Code
 
 The `vscode/` directory is a complete color-theme extension (`package.json` +
-`themes/midnight-blue-color-theme.json`) covering the editor UI, syntax tokens, and the
+`themes/ashfall-color-theme.json`) covering the editor UI, syntax tokens, and the
 integrated terminal — the same palette as Ghostty and Neovim.
 
 ### A. Full color theme
 
 Install it locally without publishing by symlinking it into your extensions directory, then
-restart VS Code and pick **Midnight Blue** from `Ctrl/Cmd+K Ctrl/Cmd+T`:
+restart VS Code and pick **Ashfall** from `Ctrl/Cmd+K Ctrl/Cmd+T`:
 
 ```sh
-ln -s "$PWD/vscode" ~/.vscode/extensions/midnight-blue-theme
+ln -s "$PWD/vscode" ~/.vscode/extensions/ashfall-theme
 ```
 
 To package or publish to the Marketplace instead:
 
 ```sh
 cd vscode
-npx @vscode/vsce package      # -> midnight-blue-theme-1.0.1.vsix
-code --install-extension midnight-blue-theme-1.0.1.vsix
+npx @vscode/vsce package      # -> ashfall-theme-1.0.1.vsix
+code --install-extension ashfall-theme-1.0.1.vsix
 ```
 
 ### B. Integrated terminal only
@@ -95,19 +96,19 @@ your `settings.json` — no extension needed:
 
 ```jsonc
 "workbench.colorCustomizations": {
-  "terminal.background": "#1A1F2B",
-  "terminal.foreground": "#E6EAF2",
+  "terminal.background": "#202125",
+  "terminal.foreground": "#EAEBEE",
   "terminalCursor.foreground": "#8FB6E8",
   "terminal.selectionBackground": "#33508A",
-  "terminal.ansiBlack": "#39414F",
+  "terminal.ansiBlack": "#414347",
   "terminal.ansiRed": "#FF6B6B",
   "terminal.ansiGreen": "#8CE0A0",
   "terminal.ansiYellow": "#FFD479",
   "terminal.ansiBlue": "#6FA8FF",
   "terminal.ansiMagenta": "#C792EA",
   "terminal.ansiCyan": "#56C9D6",
-  "terminal.ansiWhite": "#D8DEE9",
-  "terminal.ansiBrightBlack": "#7F8AA0",
+  "terminal.ansiWhite": "#DEE0E3",
+  "terminal.ansiBrightBlack": "#8B8E94",
   "terminal.ansiBrightRed": "#FF8B8B",
   "terminal.ansiBrightGreen": "#A6E8B4",
   "terminal.ansiBrightYellow": "#FFE3A3",
@@ -122,13 +123,13 @@ your `settings.json` — no extension needed:
 
 | Role | Normal | Bright |
 |------|--------|--------|
-| black   | `#39414F` | `#7F8AA0` |
+| black   | `#414347` | `#8B8E94` |
 | red     | `#FF6B6B` | `#FF8B8B` |
 | green   | `#8CE0A0` | `#A6E8B4` |
 | yellow  | `#FFD479` | `#FFE3A3` |
 | blue    | `#6FA8FF` | `#9CC4FF` |
 | magenta | `#C792EA` | `#DDB0F6` |
 | cyan    | `#56C9D6` | `#8BE9F0` |
-| white   | `#D8DEE9` | `#FFFFFF` |
+| white   | `#DEE0E3` | `#FFFFFF` |
 
-Background `#1A1F2B` · Foreground `#E6EAF2` · Cursor `#8FB6E8` · Selection `#33508A`
+Background `#202125` · Foreground `#EAEBEE` · Cursor `#8FB6E8` · Selection `#33508A`

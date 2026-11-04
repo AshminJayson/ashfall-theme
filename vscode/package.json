@@ -1,7 +1,7 @@
 {
-  "name": "midnight-blue-theme",
-  "displayName": "Midnight Blue",
-  "description": "A cool, deep-navy theme. Soft cool-white text on dark navy, with a saturated palette that keeps blue and cyan distinct. Shared with Ghostty and Neovim from a single source of truth.",
+  "name": "ashfall-theme",
+  "displayName": "Ashfall",
+  "description": "A neutral ash-grey dark theme. Soft off-white text on a near-neutral grey background, with warm coral keys and green values for easy scanning of YAML and config files. Shared with Ghostty and Neovim from a single source of truth.",
   "version": "1.0.1",
   "publisher": "AshminJayson",
   "license": "MIT",
@@ -14,20 +14,20 @@
   "keywords": [
     "theme",
     "dark",
-    "navy",
+    "grey",
     "blue",
     "color-theme"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/AshminJayson/midnight-blue-theme.git"
+    "url": "https://github.com/AshminJayson/ashfall-theme.git"
   },
   "contributes": {
     "themes": [
       {
-        "label": "Midnight Blue",
+        "label": "Ashfall",
         "uiTheme": "vs-dark",
-        "path": "./themes/midnight-blue-color-theme.json"
+        "path": "./themes/ashfall-color-theme.json"
       }
     ]
   }

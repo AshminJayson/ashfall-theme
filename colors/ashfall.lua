@@ -1,6 +1,6 @@
--- Midnight Blue — a truecolor Neovim colorscheme matching the Ghostty theme.
--- Load with `:colorscheme midnight-blue`. For a transparent background (inherit
--- the terminal's), set `vim.g.midnight_blue_transparent = true` before loading.
+-- Ashfall — a truecolor Neovim colorscheme matching the Ghostty theme.
+-- Load with `:colorscheme ashfall`. For a transparent background (inherit
+-- the terminal's), set `vim.g.ashfall_transparent = true` before loading.
 
 vim.cmd 'highlight clear'
 if vim.fn.exists 'syntax_on' == 1 then
@@ -8,21 +8,21 @@ if vim.fn.exists 'syntax_on' == 1 then
 end
 vim.o.termguicolors = true
 vim.o.background = 'dark'
-vim.g.colors_name = 'midnight-blue'
+vim.g.colors_name = 'ashfall'
 
 -- Palette (mirrors the Ghostty theme's base colors + ANSI 0-15).
 local c = {
-  bg = '#1A1F2B',
-  fg = '#E6EAF2',
-  black = '#39414F',
+  bg = '#202125',
+  fg = '#EAEBEE',
+  black = '#414347',
   red = '#FF6B6B',
   green = '#8CE0A0',
   yellow = '#FFD479',
   blue = '#6FA8FF',
   magenta = '#C792EA',
   cyan = '#56C9D6',
-  white = '#D8DEE9',
-  br_black = '#7F8AA0',
+  white = '#DEE0E3',
+  br_black = '#8B8E94',
   br_red = '#FF8B8B',
   br_green = '#A6E8B4',
   br_yellow = '#FFE3A3',
@@ -31,18 +31,18 @@ local c = {
   br_cyan = '#8BE9F0',
   br_white = '#FFFFFF',
   -- Derived UI tones
-  bg_float = '#151A24',
-  bg_alt = '#232A3A',
-  cursorline = '#222A38',
-  gutter = '#4A5468',
-  comment = '#8691A8',
-  border = '#2A3142',
+  bg_float = '#1A1C1F',
+  bg_alt = '#2B2D32',
+  cursorline = '#2A2C30',
+  gutter = '#54575E',
+  comment = '#92959C',
+  border = '#32353A',
   sel = '#33508A',
   visual = '#2C3A57',
   cursor = '#8FB6E8',
 }
 
-local transparent = vim.g.midnight_blue_transparent == true
+local transparent = vim.g.ashfall_transparent == true
 local bg = transparent and 'NONE' or c.bg
 local bg_gutter = transparent and 'NONE' or c.bg
 
@@ -185,6 +185,7 @@ local ts = {
   ['@method.call'] = { fg = c.blue },
   ['@field'] = { fg = c.br_blue },
   ['@property'] = { fg = c.br_blue },
+  ['@property.yaml'] = { fg = c.red },
   ['@parameter'] = { fg = c.fg },
   ['@keyword'] = { fg = c.magenta },
   ['@keyword.function'] = { fg = c.magenta },
