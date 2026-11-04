@@ -1,12 +1,12 @@
 # Ashfall
 
-A slate dark theme. Soft off-white text on a lightly blue-tinted slate background
-(`#1D2028`), with coral keys, lime values and orange numbers so YAML and config files scan easily.
+A deep-navy dark theme. Soft off-white text on a navy background
+(`#1A1F2B`), with coral keys, lime values and orange numbers so YAML and config files scan easily.
 Designed to be shared
 between a terminal (Ghostty) and Neovim from a **single source of truth**.
 
-![bg #1D2028 · fg #E8EBF0](https://img.shields.io/badge/bg-%23202125-1D2028)
-![fg #E8EBF0](https://img.shields.io/badge/fg-%23EAEBEE-E8EBF0)
+![bg #1A1F2B · fg #E6EAF2](https://img.shields.io/badge/bg-%23202125-1A1F2B)
+![fg #E6EAF2](https://img.shields.io/badge/fg-%23EAEBEE-E6EAF2)
 
 ## Ghostty
 
@@ -96,19 +96,19 @@ your `settings.json` — no extension needed:
 
 ```jsonc
 "workbench.colorCustomizations": {
-  "terminal.background": "#1D2028",
-  "terminal.foreground": "#E8EBF0",
+  "terminal.background": "#1A1F2B",
+  "terminal.foreground": "#E6EAF2",
   "terminalCursor.foreground": "#8FB6E8",
   "terminal.selectionBackground": "#33508A",
-  "terminal.ansiBlack": "#3D424B",
+  "terminal.ansiBlack": "#39414F",
   "terminal.ansiRed": "#FF7A7A",
   "terminal.ansiGreen": "#A6E36E",
   "terminal.ansiYellow": "#FFD479",
   "terminal.ansiBlue": "#7AB0FF",
   "terminal.ansiMagenta": "#D29BF5",
   "terminal.ansiCyan": "#56C9D6",
-  "terminal.ansiWhite": "#DBDFE6",
-  "terminal.ansiBrightBlack": "#868C99",
+  "terminal.ansiWhite": "#D8DEE9",
+  "terminal.ansiBrightBlack": "#7F8AA0",
   "terminal.ansiBrightRed": "#FF8B8B",
   "terminal.ansiBrightGreen": "#C0EE95",
   "terminal.ansiBrightYellow": "#FFE3A3",
@@ -123,13 +123,13 @@ your `settings.json` — no extension needed:
 
 | Role | Normal | Bright |
 |------|--------|--------|
-| black   | `#3D424B` | `#868C99` |
+| black   | `#39414F` | `#7F8AA0` |
 | red     | `#FF7A7A` | `#FF8B8B` |
 | green   | `#A6E36E` | `#C0EE95` |
 | yellow  | `#FFD479` | `#FFE3A3` |
 | blue    | `#7AB0FF` | `#9CC4FF` |
 | magenta | `#D29BF5` | `#DDB0F6` |
 | cyan    | `#56C9D6` | `#8BE9F0` |
-| white   | `#DBDFE6` | `#FFFFFF` |
+| white   | `#D8DEE9` | `#FFFFFF` |
 
-Background `#1D2028` · Foreground `#E8EBF0` · Cursor `#8FB6E8` · Selection `#33508A`
+Background `#1A1F2B` · Foreground `#E6EAF2` · Cursor `#8FB6E8` · Selection `#33508A`

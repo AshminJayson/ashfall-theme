@@ -1,12 +1,12 @@
-# Ashfall — a slate Ghostty theme.
-# Soft off-white foreground on blue-tinted slate; coral, lime and orange accents.
+# Ashfall — a deep-navy Ghostty theme.
+# Soft off-white foreground on navy; coral, lime and orange accents.
 #
 # Install: copy this file to ~/.config/ghostty/themes/ashfall
 #          then add `theme = ashfall` to ~/.config/ghostty/config
 
 # --- Base colors ---
-background = 1D2028
-foreground = E8EBF0
+background = 1A1F2B
+foreground = E6EAF2
 
 # Selection: blue tint so highlighted text stays readable
 selection-background = 33508A
@@ -16,15 +16,15 @@ selection-foreground = FFFFFF
 cursor-color = 8FB6E8
 
 # --- ANSI palette (0-7 normal, 8-15 bright) ---
-palette = 0=#3D424B
+palette = 0=#39414F
 palette = 1=#FF7A7A
 palette = 2=#A6E36E
 palette = 3=#FFD479
 palette = 4=#7AB0FF
 palette = 5=#D29BF5
 palette = 6=#56C9D6
-palette = 7=#DBDFE6
-palette = 8=#868C99
+palette = 7=#D8DEE9
+palette = 8=#7F8AA0
 palette = 9=#FF8B8B
 palette = 10=#C0EE95
 palette = 11=#FFE3A3
