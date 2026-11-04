@@ -1,7 +1,7 @@
 {
   "name": "ashfall-theme",
   "displayName": "Ashfall",
-  "description": "A neutral ash-grey dark theme. Soft off-white text on a near-neutral grey background, with warm coral keys and green values for easy scanning of YAML and config files. Shared with Ghostty and Neovim from a single source of truth.",
+  "description": "A slate dark theme. Soft off-white text on a lightly blue-tinted slate background, with coral keys, lime values and orange numbers for easy scanning of YAML and config files. Shared with Ghostty and Neovim from a single source of truth.",
   "version": "1.0.1",
   "publisher": "AshminJayson",
   "license": "MIT",
@@ -14,7 +14,7 @@
   "keywords": [
     "theme",
     "dark",
-    "grey",
+    "slate",
     "blue",
     "color-theme"
   ],

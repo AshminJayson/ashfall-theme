@@ -1,12 +1,12 @@
 # Ashfall
 
-A neutral ash-grey dark theme. Soft off-white text on a near-neutral grey background
-(`#202125`), with warm coral keys and green values so YAML and config files scan easily.
+A slate dark theme. Soft off-white text on a lightly blue-tinted slate background
+(`#1D2028`), with coral keys, lime values and orange numbers so YAML and config files scan easily.
 Designed to be shared
 between a terminal (Ghostty) and Neovim from a **single source of truth**.
 
-![bg #202125 · fg #EAEBEE](https://img.shields.io/badge/bg-%23202125-202125)
-![fg #EAEBEE](https://img.shields.io/badge/fg-%23EAEBEE-EAEBEE)
+![bg #1D2028 · fg #E8EBF0](https://img.shields.io/badge/bg-%23202125-1D2028)
+![fg #E8EBF0](https://img.shields.io/badge/fg-%23EAEBEE-E8EBF0)
 
 ## Ghostty
 
@@ -96,21 +96,21 @@ your `settings.json` — no extension needed:
 
 ```jsonc
 "workbench.colorCustomizations": {
-  "terminal.background": "#202125",
-  "terminal.foreground": "#EAEBEE",
+  "terminal.background": "#1D2028",
+  "terminal.foreground": "#E8EBF0",
   "terminalCursor.foreground": "#8FB6E8",
   "terminal.selectionBackground": "#33508A",
-  "terminal.ansiBlack": "#414347",
-  "terminal.ansiRed": "#FF6B6B",
-  "terminal.ansiGreen": "#8CE0A0",
+  "terminal.ansiBlack": "#3D424B",
+  "terminal.ansiRed": "#FF7A7A",
+  "terminal.ansiGreen": "#A6E36E",
   "terminal.ansiYellow": "#FFD479",
-  "terminal.ansiBlue": "#6FA8FF",
-  "terminal.ansiMagenta": "#C792EA",
+  "terminal.ansiBlue": "#7AB0FF",
+  "terminal.ansiMagenta": "#D29BF5",
   "terminal.ansiCyan": "#56C9D6",
-  "terminal.ansiWhite": "#DEE0E3",
-  "terminal.ansiBrightBlack": "#8B8E94",
+  "terminal.ansiWhite": "#DBDFE6",
+  "terminal.ansiBrightBlack": "#868C99",
   "terminal.ansiBrightRed": "#FF8B8B",
-  "terminal.ansiBrightGreen": "#A6E8B4",
+  "terminal.ansiBrightGreen": "#C0EE95",
   "terminal.ansiBrightYellow": "#FFE3A3",
   "terminal.ansiBrightBlue": "#9CC4FF",
   "terminal.ansiBrightMagenta": "#DDB0F6",
@@ -123,13 +123,13 @@ your `settings.json` — no extension needed:
 
 | Role | Normal | Bright |
 |------|--------|--------|
-| black   | `#414347` | `#8B8E94` |
-| red     | `#FF6B6B` | `#FF8B8B` |
-| green   | `#8CE0A0` | `#A6E8B4` |
+| black   | `#3D424B` | `#868C99` |
+| red     | `#FF7A7A` | `#FF8B8B` |
+| green   | `#A6E36E` | `#C0EE95` |
 | yellow  | `#FFD479` | `#FFE3A3` |
-| blue    | `#6FA8FF` | `#9CC4FF` |
-| magenta | `#C792EA` | `#DDB0F6` |
+| blue    | `#7AB0FF` | `#9CC4FF` |
+| magenta | `#D29BF5` | `#DDB0F6` |
 | cyan    | `#56C9D6` | `#8BE9F0` |
-| white   | `#DEE0E3` | `#FFFFFF` |
+| white   | `#DBDFE6` | `#FFFFFF` |
 
-Background `#202125` · Foreground `#EAEBEE` · Cursor `#8FB6E8` · Selection `#33508A`
+Background `#1D2028` · Foreground `#E8EBF0` · Cursor `#8FB6E8` · Selection `#33508A`
