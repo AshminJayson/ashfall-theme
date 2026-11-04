@@ -2,7 +2,7 @@
   "name": "midnight-blue-theme",
   "displayName": "Midnight Blue",
   "description": "A cool, deep-navy theme. Soft cool-white text on dark navy, with a saturated palette that keeps blue and cyan distinct. Shared with Ghostty and Neovim from a single source of truth.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "AshminJayson",
   "license": "MIT",
   "engines": {

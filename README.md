@@ -84,8 +84,8 @@ To package or publish to the Marketplace instead:
 
 ```sh
 cd vscode
-npx @vscode/vsce package      # -> midnight-blue-theme-1.0.0.vsix
-code --install-extension midnight-blue-theme-1.0.0.vsix
+npx @vscode/vsce package      # -> midnight-blue-theme-1.0.1.vsix
+code --install-extension midnight-blue-theme-1.0.1.vsix
 ```
 
 ### B. Integrated terminal only
@@ -107,7 +107,7 @@ your `settings.json` — no extension needed:
   "terminal.ansiMagenta": "#C792EA",
   "terminal.ansiCyan": "#56C9D6",
   "terminal.ansiWhite": "#D8DEE9",
-  "terminal.ansiBrightBlack": "#5A6478",
+  "terminal.ansiBrightBlack": "#7F8AA0",
   "terminal.ansiBrightRed": "#FF8B8B",
   "terminal.ansiBrightGreen": "#A6E8B4",
   "terminal.ansiBrightYellow": "#FFE3A3",
@@ -122,7 +122,7 @@ your `settings.json` — no extension needed:
 
 | Role | Normal | Bright |
 |------|--------|--------|
-| black   | `#39414F` | `#5A6478` |
+| black   | `#39414F` | `#7F8AA0` |
 | red     | `#FF6B6B` | `#FF8B8B` |
 | green   | `#8CE0A0` | `#A6E8B4` |
 | yellow  | `#FFD479` | `#FFE3A3` |

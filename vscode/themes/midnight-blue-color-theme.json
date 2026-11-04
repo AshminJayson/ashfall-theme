@@ -169,7 +169,7 @@
     "terminal.ansiMagenta": "#C792EA",
     "terminal.ansiCyan": "#56C9D6",
     "terminal.ansiWhite": "#D8DEE9",
-    "terminal.ansiBrightBlack": "#5A6478",
+    "terminal.ansiBrightBlack": "#7F8AA0",
     "terminal.ansiBrightRed": "#FF8B8B",
     "terminal.ansiBrightGreen": "#A6E8B4",
     "terminal.ansiBrightYellow": "#FFE3A3",
@@ -182,7 +182,7 @@
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
-      "settings": { "foreground": "#6E7A90", "fontStyle": "italic" }
+      "settings": { "foreground": "#8691A8", "fontStyle": "italic" }
     },
     {
       "name": "String",
@@ -217,7 +217,7 @@
     {
       "name": "Parameter",
       "scope": ["variable.parameter", "meta.function.parameters"],
-      "settings": { "foreground": "#FFFFFF" }
+      "settings": { "foreground": "#E6EAF2" }
     },
     {
       "name": "Property / field",
@@ -285,6 +285,11 @@
       "settings": { "foreground": "#FF6B6B" }
     },
     {
+      "name": "YAML key",
+      "scope": ["entity.name.tag.yaml"],
+      "settings": { "foreground": "#9CC4FF" }
+    },
+    {
       "name": "Tag attribute",
       "scope": ["entity.other.attribute-name"],
       "settings": { "foreground": "#FFD479" }
@@ -331,7 +336,7 @@
     }
   ],
   "semanticTokenColors": {
-    "parameter": "#FFFFFF",
+    "parameter": "#E6EAF2",
     "property": "#9CC4FF",
     "variable.readonly": "#FFD479",
     "function.defaultLibrary": "#9CC4FF",
